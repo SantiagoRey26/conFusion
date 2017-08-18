@@ -40,12 +40,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm align-self-center"> 
+                <div class="col col-sm-3 align-self-center"> 
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-sm-3 align-self-center">
+                    <a href="#resTable" class="btn btn-warning btn-sm btn-block" role="button">Reserve a table</a>
                 </div>
             </div>
         </div>
@@ -108,12 +111,41 @@
 
         <!--FORM /////////////////////////////////////////////////-->
 
-        <div class="row row-content algin-items-center">
-
-            <!--ACA VA ELL FORMULARIO-->
-            
+        <div class="row row-content algin-items-center justify-content-center">
+            <div class="card col-xs col-sm-8">
+                <h3 class="card-header bg-warning text-white">Reserve a table</h3>
+                <div class="card-block">
+                    <form class="form-inline" id="resTable">
+                        <div class="form-group row">
+                            <label for="guests" class="col-sm-4 col-form-label">Number of guests</label>
+                            <div class="col-sm-8">
+                                <input type="radio" class="form-control" id="one" name="guests">1
+                                <input type="radio" class="form-control" id="two" name="guests">2
+                                <input type="radio" class="form-control" id="three" name="guests">3
+                                <input type="radio" class="form-control" id="four" name="guests">4
+                                <input type="radio" class="form-control" id="five" name="guests">5
+                                <input type="radio" class="form-control" id="six" name="guests">6
+                            </div>                                                                
+                        </div>
+                        <div class="form-group row">
+                            <label for="dateNTime" class="col-sm-4 col-form-label">Date and time</label>
+                            <div class="col-sm-4">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                    <input type="date" class="form-control" id="date" name="dateNTime" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="icon-time"></i></div>
+                                    <input type="time" class="form-control" id="time" name="dateNTime" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
 
     <!--FOOTER ///////////////////////////////////////////////-->
 
